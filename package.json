@@ -1,0 +1,29 @@
+{
+  "name": "y-webcomponents",
+  "version": "0.0.0",
+  "description": "Web components for collaborative editing",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "start": "concurrently 'rollup -wc' serve",
+    "dist": "rollup -c"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "d-components": "^0.1.4",
+    "lib0": "^0.2.9"
+  },
+  "peerDependencies": {
+    "yjs": "^13.0.0-108"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "concurrently": "^5.0.2",
+    "rollup": "^1.28.0",
+    "rollup-plugin-terser": "^5.2.0",
+    "serve": "^11.3.0",
+    "typescript": "^3.7.4"
+  }
+}
