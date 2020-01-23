@@ -1,6 +1,6 @@
 {
   "name": "y-webcomponents",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Web components for collaborative editing",
   "main": "src/index.js",
   "module": "src/index.js",
