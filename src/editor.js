@@ -39,7 +39,7 @@ export const defineEditor = component.createComponentDefiner(() => {
       editable: true,
       nodes: {
         'd-editor-p': true,
-        'd-editor-img': true,
+        'd-editor-img': true
         // 'd-pdf': import('./d-editor-pdf.js')
       },
       parser: defaultParser

@@ -9,7 +9,7 @@ ycomps.defineVersions()
 const ydoc = new Y.Doc()
 const provider = new WebsocketProvider('wss://demos.yjs.dev', 'y-components-demo', ydoc)
 const awareness = provider.awareness
-awareness.setLocalState({ color: '#6eeb83', name: 'Frankly Frank' + Math.floor(Math.random()*10) })
+awareness.setLocalState({ color: '#6eeb83', name: 'Frankly Frank' + Math.floor(Math.random() * 10) })
 
 // @ts-ignore
 window.awareness = awareness

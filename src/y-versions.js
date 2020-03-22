@@ -28,7 +28,7 @@ export const defineVersions = component.createComponentDefiner(() => {
     },
     slots: ({ version, index }) => ({
       name: `<div>${version.name || `Version ${index}`}</div>`,
-      date: version.date ? `<div>${version.date.toLocaleDateString()} - ${version.date.toLocaleTimeString()}</div>` : `<div></div>`
+      date: version.date ? `<div>${version.date.toLocaleDateString()} - ${version.date.toLocaleTimeString()}</div>` : '<div></div>'
     }),
     listeners: {
       [dcomps.buttonPressedEvent]: (event, component) => {
@@ -98,6 +98,6 @@ export const defineVersions = component.createComponentDefiner(() => {
           component.state.selectVersion(version, index)
         }
       }
-    },
+    }
   })
 })
