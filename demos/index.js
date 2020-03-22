@@ -15,7 +15,7 @@ awareness.setLocalState({ color: '#6eeb83', name: 'Frankly Frank' + Math.floor(M
 window.awareness = awareness
 
 component.createComponent('d-demos', {
-  template: `<y-versions></y-versions>`,
+  template: '<y-whiteboard></y-whiteboard><y-versions></y-versions>',
   style: `
     y-versions {
       max-height: 500px;
@@ -23,6 +23,7 @@ component.createComponent('d-demos', {
   `,
   state: { versions: [] },
   childStates: {
-    'y-versions': ({ versions }, component) => ({ versions, addVersion: () => { component.updateState({ versions: versions.concat([{ date: new Date() }]) }) } })
+    'y-versions': ({ versions }, component) => ({ versions, addVersion: () => { component.updateState({ versions: versions.concat([{ date: new Date() }]) }) } }),
+    'y-whiteboard': () => ({ type: ydoc.getArray('whiteboard') })
   }
 })
