@@ -5,6 +5,7 @@ import * as Y from 'yjs'
 import { WebsocketProvider } from 'y-websocket'
 
 ycomps.defineVersions()
+ycomps.defineWhiteboard()
 
 const ydoc = new Y.Doc()
 const provider = new WebsocketProvider('wss://demos.yjs.dev', 'y-components-demo', ydoc)
