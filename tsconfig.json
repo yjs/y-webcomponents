@@ -39,11 +39,8 @@
     /* Module Resolution Options */
     "baseUrl": "./",                       /* Base directory to resolve non-absolute module names. */
     "paths": {
-      "lib0/*": ["node_modules/lib0/*"],
-      "yjs": ["node_modules/yjs/src/index.js"],
-      "y-websocket": ["node_modules/y-websocket/src/y-websocket.js"]
     },
-    "maxNodeModuleJsDepth": 5,
+    // "maxNodeModuleJsDepth": 5,
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                       /* List of folders to include type definitions from. */
     // "allowSyntheticDefaultImports": true,  /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
